@@ -50,6 +50,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+#Email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
@@ -120,3 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'thunm1116@gmail.com'
+EMAIL_HOST_PASSWORD = 'Love1122'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
