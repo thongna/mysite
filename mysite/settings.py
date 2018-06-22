@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'taggit',
+    'markdown',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +133,6 @@ EMAIL_HOST_USER = 'thunm1116@gmail.com'
 EMAIL_HOST_PASSWORD = 'Love1122'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+#sitemap
+SITE_ID = 1
