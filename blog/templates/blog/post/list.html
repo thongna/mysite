@@ -7,6 +7,16 @@
     {% if tag %}
         <h2>Posts tagged with "{{ tag.name }}"</h2>
     {% endif %}
+    <h2>Search for posts</h2>
+        <form action="search" method="get">
+            {{ form.as_p }}
+            <input type="submit" value="Search">
+        </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     {% for post in posts %}
         <h2>
             <a href="{{ post.get_absolute_url }}">
